@@ -23,7 +23,7 @@
         <input type="text" class="form-control" id="tag" name="tag" aria-describedby="tag" value="@foreach($artikel->tag as $key=> $tg)@if($key>0),@endif{{$tg}}@endforeach">
         <small id="tag" class="form-text text-muted">Pisahkan kata tiap tag menggunakan , (koma)</small>
       </div>
-    <input type="hidden" class="form-control" id="updated_at" name="updated_at" value="{{now()}}">
+    <input type="hidden" class="form-control" id="updated_at" name="updated_at" value="{{\Carbon\Carbon::now('Asia/Jakarta')}}">
     <button type="submit" class="btn btn-primary">Submit</button>
     <a class="btn btn-light border-secondary" href="/artikel">Cancel</a>
   </form>

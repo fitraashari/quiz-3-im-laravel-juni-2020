@@ -22,8 +22,8 @@
         <input type="text" class="form-control" id="tag" name="tag" aria-describedby="tag">
         <small id="tag" class="form-text text-muted">Pisahkan kata tiap tag menggunakan , (koma)</small>
       </div>
-    <input type="hidden" class="form-control" id="created_at" name="created_at" value="{{now()}}">
-    <input type="hidden" class="form-control" id="updated_at" name="updated_at" value="{{now()}}">
+    <input type="hidden" class="form-control" id="created_at" name="created_at" value="{{\Carbon\Carbon::now('Asia/Jakarta')}}">
+    <input type="hidden" class="form-control" id="updated_at" name="updated_at" value="{{\Carbon\Carbon::now('Asia/Jakarta')}}">
     <button type="submit" class="btn btn-primary">Submit</button>
     <a class="btn btn-light border-secondary" href="/artikel">Cancel</a>
   </form>

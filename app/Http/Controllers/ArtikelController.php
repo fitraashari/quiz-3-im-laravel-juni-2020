@@ -13,6 +13,7 @@ class ArtikelController extends Controller
         return view('artikel.index', compact('artikel'));
     }
     public function create(){
+        
         return view('artikel.form');
     }
     public function store(Request $request){
