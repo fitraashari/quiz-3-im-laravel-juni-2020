@@ -20,7 +20,7 @@ Route::post('/artikel', 'ArtikelController@store');
 Route::get('/artikel/{id}', 'ArtikelController@detail');
 Route::get('/artikel/{id}/edit', 'ArtikelController@edit');
 Route::put('/artikel/{id}', 'ArtikelController@update');
-Route::DELETE('/artikel/{id}', 'ArtikelController@delete');
+Route::delete('/artikel/{id}', 'ArtikelController@delete');
 
 // Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
 // Route::post('/items', 'ItemController@store'); // menyimpan data
