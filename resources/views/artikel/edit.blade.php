@@ -16,7 +16,7 @@
     </div>
     <div class="form-group">
       <label for="isi">Isi</label>
-      <textarea name="isi" id="isi" class="form-control" cols="30" rows="10">{{$artikel->judul}}</textarea>
+      <textarea name="isi" id="isi" class="form-control" cols="30" rows="10">{{$artikel->isi}}</textarea>
     </div>
     <div class="form-group">
         <label for="tag">Tag</label>

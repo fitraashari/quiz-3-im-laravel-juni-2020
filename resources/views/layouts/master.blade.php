@@ -98,9 +98,8 @@
   <script src="{{asset('sbadmin2/js/sb-admin-2.min.js')}}"></script>
 
   <!-- script tambahan sweet alert, bukan dari bawaan sb-admin-2 -->
-  @stack('scripts')
-
   <script src="{{asset('sbadmin2/js/swal.min.js')}}"></script>
+  @stack('scripts')
 
 </body>
 

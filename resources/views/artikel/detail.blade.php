@@ -5,7 +5,7 @@
 <div class="card shadow mb-4">
   <div class="card-header py-3">
     <h4 class="m-0 font-weight-bold text-primary">{{$artikel->judul}} </h4>
-    <small>slug: {{$artikel->slug}}</small>
+    <small class="font-italic">slug: {{$artikel->slug}}</small>
   </div>
   <div class="card-body">
     <p style="white-space: pre-line">{{$artikel->isi}}</p>
