@@ -28,6 +28,7 @@
           </tr>
         </tfoot>
         <tbody>
+          @if (!$artikel->isEmpty())
           @foreach ($artikel as $key => $artkl)
           <tr>
           <td>{{$key+1}}</td>
@@ -46,6 +47,8 @@
             </td>
           </tr>
           @endforeach
+                        
+          @endif
         </tbody>
       </table>
     </div>

@@ -4,9 +4,18 @@
 
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Form Artikel</h6>
+    <h6 class="m-0 font-weight-bold text-primary">Edit Artikel</h6>
   </div>
   <div class="card-body">
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <form action="/artikel/{{$artikel->id}}" method="POST">
     @CSRF
     @method('PUT')
@@ -24,7 +33,7 @@
         <small id="tag" class="form-text text-muted">Pisahkan kata tiap tag menggunakan , (koma)</small>
       </div>
     <input type="hidden" class="form-control" id="updated_at" name="updated_at" value="{{\Carbon\Carbon::now('Asia/Jakarta')}}">
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Update</button>
     <a class="btn btn-light border-secondary" href="/artikel">Cancel</a>
   </form>
   </div>

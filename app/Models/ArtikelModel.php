@@ -9,7 +9,7 @@ class ArtikelModel{
     }
     public static function save($data){
         $data['slug'] = str_replace(' ','-',Str::lower($data['judul']));
-        $data['user_id'] = 1;
+        //$data['user_id'] = 1;
         unset($data['_token']);
         //dd($data);
         $insert = DB::table('artikel')->insert($data);
