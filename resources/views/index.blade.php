@@ -6,7 +6,7 @@
       <h6 class="m-0 font-weight-bold text-primary">Rancangan ERD</h6>
     </div>
     <div class="card-body">
-    <img src="{{asset('cms.png')}}" alt="">
+    <img src="{{asset('cms.png')}}" class="img-fluid mx-auto d-block" alt="Responsive image">
     </div>
   </div>
 
