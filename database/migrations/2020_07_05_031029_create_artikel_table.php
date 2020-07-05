@@ -20,7 +20,7 @@ class CreateArtikelTable extends Migration
             $table->string('slug');
             $table->string('tag');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->reference('id')->on('users')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
