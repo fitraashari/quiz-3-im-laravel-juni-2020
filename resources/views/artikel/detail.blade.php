@@ -21,5 +21,6 @@
             @endforeach</p>
   </div>
 </div>
+<a href="/artikel" class="btn btn-primary"><i class="fas fa-chevron-circle-left"></i> Kembali</a>
 
 @endsection
